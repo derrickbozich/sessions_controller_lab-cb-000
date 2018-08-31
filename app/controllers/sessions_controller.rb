@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def create
     session[:name] = params[:name] if params[:name]
   end
-  
+
   def destroy
   end
 end
