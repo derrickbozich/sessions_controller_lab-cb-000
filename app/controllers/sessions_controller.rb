@@ -8,10 +8,13 @@ class SessionsController < ApplicationController
     if current_user.nil?
       redirect_to '/'
     else
-      
+
     end
   end
 
   def destroy
+    if current_user.present?
+      session[:name].clear
+    end
   end
 end
