@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     session[:name] = params[:name] if params[:name]
 
     if current_user.nil?
-      redirect_to login_path
+      redirect_to sessions_new_path
     else
       redirect_to '/'
     end
