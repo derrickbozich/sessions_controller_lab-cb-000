@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     session[:name] = params[:name] if params[:name]
-    binding.pry
+    
     if !current_user.present?
 
       redirect_to sessions_new_path
