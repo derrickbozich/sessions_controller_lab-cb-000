@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    binding.pry
     if current_user != [] || current_user != ''
       session[:name].clear
     end
