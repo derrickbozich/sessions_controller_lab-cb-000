@@ -18,5 +18,6 @@ class SessionsController < ApplicationController
     if current_user.present?
       session[:name].clear
     end
+    session[:name] = nil
   end
 end
