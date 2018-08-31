@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    if current_user.present?
+    if !current_user.nil?
       session[:name].clear
     end
   end
