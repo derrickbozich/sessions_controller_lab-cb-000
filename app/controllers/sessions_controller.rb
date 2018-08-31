@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
     
     if current_user.present?
       binding.pry
-      session[:name].clear
+      session[:name] = nil
     else
       session[:name] = nil
     end
