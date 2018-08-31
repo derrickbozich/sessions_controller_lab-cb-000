@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     session[:name] = params[:name] if params[:name]
     binding.pry
     if current_user.nil?
-      
+
       redirect_to '/sessions/new'
     else
       redirect_to '/'
