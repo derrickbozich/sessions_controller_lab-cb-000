@@ -20,6 +20,6 @@ class SessionsController < ApplicationController
     else
       session[:name] = nil
     end
-    
+
   end
 end
